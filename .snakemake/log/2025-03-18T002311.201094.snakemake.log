@@ -1,0 +1,181 @@
+host: d419
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 25
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count
+-------  -------
+TElocal        6
+all            1
+total          7
+
+Select jobs to execute...
+Execute 6 jobs...
+
+[Tue Mar 18 00:23:11 2025]
+localrule TElocal:
+    input: ../output/counts/SRR17762738/mouse/SRR17762738Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762738/mouse/SRR17762738TElocal.cntTable
+    log: ../output/log/mouse/SRR17762738/TElocal.log
+    jobid: 1
+    reason: Missing output files: ../output/counts/SRR17762738/mouse/SRR17762738TElocal.cntTable
+    wildcards: sample_id=SRR17762738, genome=mouse
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../../../home/luosg/miniconda3/envs/TElocal
+
+[Tue Mar 18 00:23:11 2025]
+localrule TElocal:
+    input: ../output/counts/SRR17762744/mouse/SRR17762744Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762744/mouse/SRR17762744TElocal.cntTable
+    log: ../output/log/mouse/SRR17762744/TElocal.log
+    jobid: 10
+    reason: Missing output files: ../output/counts/SRR17762744/mouse/SRR17762744TElocal.cntTable
+    wildcards: sample_id=SRR17762744, genome=mouse
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../../../home/luosg/miniconda3/envs/TElocal
+
+[Tue Mar 18 00:23:11 2025]
+localrule TElocal:
+    input: ../output/counts/SRR17762742/mouse/SRR17762742Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762742/mouse/SRR17762742TElocal.cntTable
+    log: ../output/log/mouse/SRR17762742/TElocal.log
+    jobid: 13
+    reason: Missing output files: ../output/counts/SRR17762742/mouse/SRR17762742TElocal.cntTable
+    wildcards: sample_id=SRR17762742, genome=mouse
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../../../home/luosg/miniconda3/envs/TElocal
+
+[Tue Mar 18 00:23:11 2025]
+localrule TElocal:
+    input: ../output/counts/SRR17762748/mouse/SRR17762748Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762748/mouse/SRR17762748TElocal.cntTable
+    log: ../output/log/mouse/SRR17762748/TElocal.log
+    jobid: 4
+    reason: Missing output files: ../output/counts/SRR17762748/mouse/SRR17762748TElocal.cntTable
+    wildcards: sample_id=SRR17762748, genome=mouse
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../../../home/luosg/miniconda3/envs/TElocal
+
+[Tue Mar 18 00:23:11 2025]
+localrule TElocal:
+    input: ../output/counts/SRR17762739/mouse/SRR17762739Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762739/mouse/SRR17762739TElocal.cntTable
+    log: ../output/log/mouse/SRR17762739/TElocal.log
+    jobid: 16
+    reason: Missing output files: ../output/counts/SRR17762739/mouse/SRR17762739TElocal.cntTable
+    wildcards: sample_id=SRR17762739, genome=mouse
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../../../home/luosg/miniconda3/envs/TElocal
+
+[Tue Mar 18 00:23:11 2025]
+localrule TElocal:
+    input: ../output/counts/SRR17762751/mouse/SRR17762751Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762751/mouse/SRR17762751TElocal.cntTable
+    log: ../output/log/mouse/SRR17762751/TElocal.log
+    jobid: 7
+    reason: Missing output files: ../output/counts/SRR17762751/mouse/SRR17762751TElocal.cntTable
+    wildcards: sample_id=SRR17762751, genome=mouse
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../../../home/luosg/miniconda3/envs/TElocal
+[Tue Mar 18 00:23:12 2025]
+Error in rule TElocal:
+    jobid: 1
+    input: ../output/counts/SRR17762738/mouse/SRR17762738Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762738/mouse/SRR17762738TElocal.cntTable
+    log: ../output/log/mouse/SRR17762738/TElocal.log (check log file(s) for error details)
+    conda-env: /home/luosg/miniconda3/envs/TElocal
+    shell:
+        
+        /opt/TElocal/TElocal --sortByPos -b ../output/counts/SRR17762738/mouse/SRR17762738Aligned.sortedByCoord.out.bam         --GTF /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/exon.gtf --TE /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/TElocal/GRCm39_GENCODE_rmsk_TE.gtf.locInd         --project SRR17762738TElocal > ../output/log/mouse/SRR17762738/TElocal.log 2>&1
+            
+        mv SRR17762738TElocal.cntTable ../output/counts/SRR17762738/mouse/SRR17762738TElocal.cntTable
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Mar 18 00:23:12 2025]
+Error in rule TElocal:
+    jobid: 4
+    input: ../output/counts/SRR17762748/mouse/SRR17762748Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762748/mouse/SRR17762748TElocal.cntTable
+    log: ../output/log/mouse/SRR17762748/TElocal.log (check log file(s) for error details)
+    conda-env: /home/luosg/miniconda3/envs/TElocal
+    shell:
+        
+        /opt/TElocal/TElocal --sortByPos -b ../output/counts/SRR17762748/mouse/SRR17762748Aligned.sortedByCoord.out.bam         --GTF /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/exon.gtf --TE /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/TElocal/GRCm39_GENCODE_rmsk_TE.gtf.locInd         --project SRR17762748TElocal > ../output/log/mouse/SRR17762748/TElocal.log 2>&1
+            
+        mv SRR17762748TElocal.cntTable ../output/counts/SRR17762748/mouse/SRR17762748TElocal.cntTable
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Mar 18 00:23:12 2025]
+Error in rule TElocal:
+    jobid: 7
+    input: ../output/counts/SRR17762751/mouse/SRR17762751Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762751/mouse/SRR17762751TElocal.cntTable
+    log: ../output/log/mouse/SRR17762751/TElocal.log (check log file(s) for error details)
+    conda-env: /home/luosg/miniconda3/envs/TElocal
+    shell:
+        
+        /opt/TElocal/TElocal --sortByPos -b ../output/counts/SRR17762751/mouse/SRR17762751Aligned.sortedByCoord.out.bam         --GTF /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/exon.gtf --TE /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/TElocal/GRCm39_GENCODE_rmsk_TE.gtf.locInd         --project SRR17762751TElocal > ../output/log/mouse/SRR17762751/TElocal.log 2>&1
+            
+        mv SRR17762751TElocal.cntTable ../output/counts/SRR17762751/mouse/SRR17762751TElocal.cntTable
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Mar 18 00:23:12 2025]
+Error in rule TElocal:
+    jobid: 16
+    input: ../output/counts/SRR17762739/mouse/SRR17762739Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762739/mouse/SRR17762739TElocal.cntTable
+    log: ../output/log/mouse/SRR17762739/TElocal.log (check log file(s) for error details)
+    conda-env: /home/luosg/miniconda3/envs/TElocal
+    shell:
+        
+        /opt/TElocal/TElocal --sortByPos -b ../output/counts/SRR17762739/mouse/SRR17762739Aligned.sortedByCoord.out.bam         --GTF /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/exon.gtf --TE /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/TElocal/GRCm39_GENCODE_rmsk_TE.gtf.locInd         --project SRR17762739TElocal > ../output/log/mouse/SRR17762739/TElocal.log 2>&1
+            
+        mv SRR17762739TElocal.cntTable ../output/counts/SRR17762739/mouse/SRR17762739TElocal.cntTable
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Mar 18 00:23:12 2025]
+Error in rule TElocal:
+    jobid: 10
+    input: ../output/counts/SRR17762744/mouse/SRR17762744Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762744/mouse/SRR17762744TElocal.cntTable
+    log: ../output/log/mouse/SRR17762744/TElocal.log (check log file(s) for error details)
+    conda-env: /home/luosg/miniconda3/envs/TElocal
+    shell:
+        
+        /opt/TElocal/TElocal --sortByPos -b ../output/counts/SRR17762744/mouse/SRR17762744Aligned.sortedByCoord.out.bam         --GTF /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/exon.gtf --TE /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/TElocal/GRCm39_GENCODE_rmsk_TE.gtf.locInd         --project SRR17762744TElocal > ../output/log/mouse/SRR17762744/TElocal.log 2>&1
+            
+        mv SRR17762744TElocal.cntTable ../output/counts/SRR17762744/mouse/SRR17762744TElocal.cntTable
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Mar 18 00:23:12 2025]
+Error in rule TElocal:
+    jobid: 13
+    input: ../output/counts/SRR17762742/mouse/SRR17762742Aligned.sortedByCoord.out.bam
+    output: ../output/counts/SRR17762742/mouse/SRR17762742TElocal.cntTable
+    log: ../output/log/mouse/SRR17762742/TElocal.log (check log file(s) for error details)
+    conda-env: /home/luosg/miniconda3/envs/TElocal
+    shell:
+        
+        /opt/TElocal/TElocal --sortByPos -b ../output/counts/SRR17762742/mouse/SRR17762742Aligned.sortedByCoord.out.bam         --GTF /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/exon.gtf --TE /ChIP_seq_2/Data/index/Mus_musculus/GENCODE/GRCm39/TElocal/GRCm39_GENCODE_rmsk_TE.gtf.locInd         --project SRR17762742TElocal > ../output/log/mouse/SRR17762742/TElocal.log 2>&1
+            
+        mv SRR17762742TElocal.cntTable ../output/counts/SRR17762742/mouse/SRR17762742TElocal.cntTable
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-03-18T002311.201094.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

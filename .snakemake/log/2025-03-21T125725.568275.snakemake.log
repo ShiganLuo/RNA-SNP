@@ -1,0 +1,58 @@
+host: d419
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 25
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                count
+---------------  -------
+all                    1
+combine_TEcount        1
+combine_TElocal        1
+total                  3
+
+Select jobs to execute...
+Execute 2 jobs...
+
+[Fri Mar 21 12:57:25 2025]
+localrule combine_TElocal:
+    input: ../output/counts/SRR17762738/mouse/SRR17762738TElocal.cntTable, ../output/counts/SRR17762748/mouse/SRR17762748TElocal.cntTable, ../output/counts/SRR17762751/mouse/SRR17762751TElocal.cntTable, ../output/counts/SRR17762744/mouse/SRR17762744TElocal.cntTable, ../output/counts/SRR17762742/mouse/SRR17762742TElocal.cntTable, ../output/counts/SRR17762739/mouse/SRR17762739TElocal.cntTable
+    output: ../output/counts/mouseTElocal.cntTable
+    log: ../output/log/mouse/combine_TElocal.log
+    jobid: 32
+    reason: Missing output files: ../output/counts/mouseTElocal.cntTable
+    wildcards: genome=mouse
+    resources: tmpdir=/tmp
+
+
+[Fri Mar 21 12:57:25 2025]
+localrule combine_TEcount:
+    input: ../output/counts/SRR17762738/mouse/SRR17762738TEcount.cntTable, ../output/counts/SRR17762748/mouse/SRR17762748TEcount.cntTable, ../output/counts/SRR17762751/mouse/SRR17762751TEcount.cntTable, ../output/counts/SRR17762744/mouse/SRR17762744TEcount.cntTable, ../output/counts/SRR17762742/mouse/SRR17762742TEcount.cntTable, ../output/counts/SRR17762739/mouse/SRR17762739TEcount.cntTable
+    output: ../output/counts/mouseTEcount.cntTable
+    log: ../output/log/mouse/combine_TEcount.log
+    jobid: 19
+    reason: Missing output files: ../output/counts/mouseTEcount.cntTable
+    wildcards: genome=mouse
+    resources: tmpdir=/tmp
+
+[Fri Mar 21 12:57:29 2025]
+Finished job 19.
+1 of 3 steps (33%) done
+[Fri Mar 21 12:58:05 2025]
+Finished job 32.
+2 of 3 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Mar 21 12:58:05 2025]
+localrule all:
+    input: ../output/2pass/SRR17762738/mouse/SRR17762738.gtf, ../output/2pass/SRR17762748/mouse/SRR17762748.gtf, ../output/2pass/SRR17762751/mouse/SRR17762751.gtf, ../output/2pass/SRR17762744/mouse/SRR17762744.gtf, ../output/2pass/SRR17762742/mouse/SRR17762742.gtf, ../output/2pass/SRR17762739/mouse/SRR17762739.gtf, ../output/counts/mouseTEcount.cntTable, ../output/counts/mouseTElocal.cntTable
+    jobid: 0
+    reason: Input files updated by another job: ../output/counts/mouseTEcount.cntTable, ../output/counts/mouseTElocal.cntTable
+    resources: tmpdir=/tmp
+
+[Fri Mar 21 12:58:05 2025]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: .snakemake/log/2025-03-21T125725.568275.snakemake.log
